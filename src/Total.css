@@ -1,0 +1,43 @@
+/* Total.css */
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: black;
+    border-width: 2px;
+    width: 500px;
+    height:450px;
+    border-radius: 3px;
+    background-color: antiquewhite;
+  }
+  
+  .images-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .image-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    border-color: black;
+    border-radius: 5px;
+    margin-left:50px;
+    background-color: navajowhite;
+  }
+  
+  .count {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    color: black;
+  }
+
+  .player_name {
+    text-align: center;
+    color:black;
+  }
+  
