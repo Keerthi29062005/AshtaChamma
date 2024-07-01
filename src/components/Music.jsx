@@ -8,11 +8,11 @@ const muteIcon = "http://upload.wikimedia.org/wikipedia/commons/3/3f/Mute_Icon.s
 function Music() {
   const [isMuted, setIsMuted] = useState(true);
   const audioRef = useRef(new Audio(sampleAudio));
+  const [isAudioInitialized, setIsAudioInitialized] = useState(false);
 
   useEffect(() => {
     const audio = audioRef.current;
     audio.loop = true;
-    audio.play();
 
     return () => {
       audio.pause();
@@ -21,7 +21,10 @@ function Music() {
 
   const toggleAudio = () => {
     const audio = audioRef.current;
-    if (isMuted) {
+    if (!isAudioInitialized) {
+      audio.play();
+      setIsAudioInitialized(true);
+    } else if (isMuted) {
       audio.play();
     } else {
       audio.pause();
