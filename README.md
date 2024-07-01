@@ -1,1 +1,1 @@
-# AshtaChamma
+AshtaChamma is a traditional Indian board game that is similar to the game of Ludo or Pachisi. The objective of the game is to move all of one's pieces from the starting point to the center of the board, following a prescribed path, before the other players do. In this game, we get the count of moves using the gavvalu instead of dice.
