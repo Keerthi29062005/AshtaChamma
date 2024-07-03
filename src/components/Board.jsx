@@ -97,7 +97,7 @@ function Board({ frontGavulluCount, playerCount}) {
 const indexing=[1,2,3,4];
   const handlePawnClickgu = () => {
     if (frontGavulluCount > 0&&indexing[currIndex]===1 && playerCount==2) {
-     console.log()
+      console.log(positiongu);
      if(positiongu.h==='c' && positiongu.v==='3')
       return;
     if(positiongu.h==='c' && positiongu.v==='2' && frontGavulluCount!=1)
@@ -422,21 +422,53 @@ const indexing=[1,2,3,4];
     if (newPosition.h === positiongu.h && newPosition.v === positiongu.v && currentPawn !== 'green' ) 
      {if(newPosition.h==='c' && newPosition.v==='3')
       return;
+      if(newPosition.h==='c' && newPosition.v==='1')
+        return;
+      if(newPosition.h==='c' && newPosition.v==='5')
+        return;
+      if(newPosition.h==='a' && newPosition.v==='3')
+        return;
+      if(newPosition.h==='e' && newPosition.v==='3')
+        return;
       resetGreenPawnup();
     }
    if (newPosition.h === positiongr.h && newPosition.v === positiongr.v && currentPawn !== 'green')
       {if(newPosition.h==='c' && newPosition.v==='3')
         return;
+        if(newPosition.h==='c' && newPosition.v==='1')
+          return;
+        if(newPosition.h==='c' && newPosition.v==='5')
+          return;
+        if(newPosition.h==='a' && newPosition.v==='3')
+          return;
+        if(newPosition.h==='e' && newPosition.v==='3')
+          return;
         resetGreenPawnright();
       }
       if (newPosition.h === positiongd.h && newPosition.v === positiongd.v && currentPawn !== 'green')
         {if(newPosition.h==='c' && newPosition.v==='3')
           return;
+          if(newPosition.h==='c' && newPosition.v==='1')
+            return;
+          if(newPosition.h==='c' && newPosition.v==='5')
+            return;
+          if(newPosition.h==='a' && newPosition.v==='3')
+            return;
+          if(newPosition.h==='e' && newPosition.v==='3')
+            return;
           resetGreenPawndown();
         }
         if (newPosition.h === positiongl.h && newPosition.v === positiongl.v && currentPawn !== 'green')
           {if(newPosition.h==='c' && newPosition.v==='3')
             return;
+            if(newPosition.h==='c' && newPosition.v==='1')
+              return;
+            if(newPosition.h==='c' && newPosition.v==='5')
+              return;
+            if(newPosition.h==='a' && newPosition.v==='3')
+              return;
+            if(newPosition.h==='e' && newPosition.v==='3')
+              return;
             resetGreenPawnleft();
           }
   };
@@ -444,21 +476,53 @@ const indexing=[1,2,3,4];
     if (newPosition.h === positionbu.h && newPosition.v === positionbu.v && currentPawn !== 'blue') 
      {if(newPosition.h==='c' && newPosition.v==='3')
       return;
+      if(newPosition.h==='c' && newPosition.v==='1')
+        return;
+      if(newPosition.h==='c' && newPosition.v==='5')
+        return;
+      if(newPosition.h==='a' && newPosition.v==='3')
+        return;
+      if(newPosition.h==='e' && newPosition.v==='3')
+        return;
       resetBluePawnup();
     }
    if (newPosition.h === positionbr.h && newPosition.v === positionbr.v && currentPawn !== 'blue')
       {if(newPosition.h==='c' && newPosition.v==='3')
         return;
+        if(newPosition.h==='c' && newPosition.v==='1')
+          return;
+        if(newPosition.h==='c' && newPosition.v==='5')
+          return;
+        if(newPosition.h==='a' && newPosition.v==='3')
+          return;
+        if(newPosition.h==='e' && newPosition.v==='3')
+          return;
         resetBluePawnright();
       }
       if (newPosition.h === positionbd.h && newPosition.v === positionbd.v && currentPawn !== 'blue')
         {if(newPosition.h==='c' && newPosition.v==='3')
           return;
+          if(newPosition.h==='c' && newPosition.v==='1')
+            return;
+          if(newPosition.h==='c' && newPosition.v==='5')
+            return;
+          if(newPosition.h==='a' && newPosition.v==='3')
+            return;
+          if(newPosition.h==='e' && newPosition.v==='3')
+            return;
           resetBluePawndown();
         }
         if (newPosition.h === positionbl.h && newPosition.v === positionbl.v && currentPawn !== 'blue')
           {if(newPosition.h==='c' && newPosition.v==='3')
             return;
+            if(newPosition.h==='c' && newPosition.v==='1')
+              return;
+            if(newPosition.h==='c' && newPosition.v==='5')
+              return;
+            if(newPosition.h==='a' && newPosition.v==='3')
+              return;
+            if(newPosition.h==='e' && newPosition.v==='3')
+              return;
             resetBluePawnleft();
           }
   };
@@ -466,21 +530,53 @@ const indexing=[1,2,3,4];
     if (newPosition.h === positionru.h && newPosition.v === positionru.v && currentPawn !== 'red') 
      {if(newPosition.h==='c' && newPosition.v==='3')
       return;
+      if(newPosition.h==='c' && newPosition.v==='1')
+        return;
+      if(newPosition.h==='c' && newPosition.v==='5')
+        return;
+      if(newPosition.h==='a' && newPosition.v==='3')
+        return;
+      if(newPosition.h==='e' && newPosition.v==='3')
+        return;
       resetRedPawnup();
     }
    if (newPosition.h === positionrr.h && newPosition.v === positionrr.v && currentPawn !== 'red')
       {if(newPosition.h==='c' && newPosition.v==='3')
         return;
+        if(newPosition.h==='c' && newPosition.v==='1')
+          return;
+        if(newPosition.h==='c' && newPosition.v==='5')
+          return;
+        if(newPosition.h==='a' && newPosition.v==='3')
+          return;
+        if(newPosition.h==='e' && newPosition.v==='3')
+          return;
         resetRedPawnright();
       }
       if (newPosition.h === positionrd.h && newPosition.v === positionrd.v && currentPawn !== 'red')
         {if(newPosition.h==='c' && newPosition.v==='3')
           return;
+          if(newPosition.h==='c' && newPosition.v==='1')
+            return;
+          if(newPosition.h==='c' && newPosition.v==='5')
+            return;
+          if(newPosition.h==='a' && newPosition.v==='3')
+            return;
+          if(newPosition.h==='e' && newPosition.v==='3')
+            return;
           resetRedPawndown();
         }
         if (newPosition.h === positionrl.h && newPosition.v === positionrl.v && currentPawn !== 'red')
           {if(newPosition.h==='c' && newPosition.v==='3')
             return;
+            if(newPosition.h==='c' && newPosition.v==='1')
+              return;
+            if(newPosition.h==='c' && newPosition.v==='5')
+              return;
+            if(newPosition.h==='a' && newPosition.v==='3')
+              return;
+            if(newPosition.h==='e' && newPosition.v==='3')
+              return;
             resetRedPawnleft();
           }
   };
@@ -488,21 +584,53 @@ const indexing=[1,2,3,4];
     if (newPosition.h === positionyu.h && newPosition.v === positionyu.v && currentPawn !== 'yellow') 
      {if(newPosition.h==='c' && newPosition.v==='3')
       return;
+      if(newPosition.h==='c' && newPosition.v==='1')
+        return;
+      if(newPosition.h==='c' && newPosition.v==='5')
+        return;
+      if(newPosition.h==='a' && newPosition.v==='3')
+        return;
+      if(newPosition.h==='e' && newPosition.v==='3')
+        return;
       resetYellowPawnup();
     }
    if (newPosition.h === positionyr.h && newPosition.v === positionyr.v && currentPawn !== 'yellow')
       {if(newPosition.h==='c' && newPosition.v==='3')
         return;
+        if(newPosition.h==='c' && newPosition.v==='1')
+          return;
+        if(newPosition.h==='c' && newPosition.v==='5')
+          return;
+        if(newPosition.h==='a' && newPosition.v==='3')
+          return;
+        if(newPosition.h==='e' && newPosition.v==='3')
+          return;
         resetYellowPawnright();
       }
       if (newPosition.h === positionyd.h && newPosition.v === positionyd.v && currentPawn !== 'yellow')
         {if(newPosition.h==='c' && newPosition.v==='3')
           return;
+          if(newPosition.h==='c' && newPosition.v==='1')
+            return;
+          if(newPosition.h==='c' && newPosition.v==='5')
+            return;
+          if(newPosition.h==='a' && newPosition.v==='3')
+            return;
+          if(newPosition.h==='e' && newPosition.v==='3')
+            return;
           resetYellowPawndown();
         }
         if (newPosition.h === positionyl.h && newPosition.v === positionyl.v && currentPawn !== 'yellow')
           {if(newPosition.h==='c' && newPosition.v==='3')
             return;
+            if(newPosition.h==='c' && newPosition.v==='1')
+              return;
+            if(newPosition.h==='c' && newPosition.v==='5')
+              return;
+            if(newPosition.h==='a' && newPosition.v==='3')
+              return;
+            if(newPosition.h==='e' && newPosition.v==='3')
+              return;
             resetYellowPawnleft();
           }
   };
@@ -548,8 +676,7 @@ const indexing=[1,2,3,4];
   
         let newMarginguLeft = currentMarginLeft + (nextPosition.h.charCodeAt(0) - path[currentIndex - 1].h.charCodeAt(0)) * 100;
         let newMarginguBottom = currentMarginBottom - (nextPosition.v - path[currentIndex - 1].v) * 100;
-        console.log(nextPosition.h,nextPosition.v);
-        console.log(newMarginguLeft,newMarginguBottom);
+       
         setMarginguLeft(newMarginguLeft);
         setMarginguBottom(newMarginguBottom);
   
@@ -557,9 +684,10 @@ const indexing=[1,2,3,4];
         currentMarginBottom = newMarginguBottom;
   
         setPositiongu(nextPosition);
-  checkCollisionblue(nextPosition,'green');
+       if(i=== steps-1)
+ { checkCollisionblue(nextPosition,'green');
   checkCollisionred(nextPosition,'green');
-  checkCollisionyellow(nextPosition,'green');
+  checkCollisionyellow(nextPosition,'green');}
         // Apply the CSS transition effect
         const g = document.getElementById('gpu');
         if (g) {
@@ -618,9 +746,10 @@ const indexing=[1,2,3,4];
         currentMarginLeft = newMargingrLeft;
         currentMarginBottom = newMargingrBottom;
         setPositiongr(nextPosition);
-        checkCollisionblue(nextPosition,'green');
+        if(i=== steps-1)
+       { checkCollisionblue(nextPosition,'green');
         checkCollisionred(nextPosition,'green');
-        checkCollisionyellow(nextPosition,'green');
+        checkCollisionyellow(nextPosition,'green');}
         // Apply the CSS transition effect
         const g = document.getElementById('gpr');
         if (g) {
@@ -680,9 +809,10 @@ const indexing=[1,2,3,4];
         currentMarginBottom = newMargingdBottom;
   
         setPositiongd(nextPosition);
-        checkCollisionblue(nextPosition,'green');
+        if(i=== steps-1)
+        {checkCollisionblue(nextPosition,'green');
         checkCollisionred(nextPosition,'green');
-        checkCollisionyellow(nextPosition,'green');
+        checkCollisionyellow(nextPosition,'green');}
         // Apply the CSS transition effect
         const g = document.getElementById('gpd');
         if (g) {
@@ -742,9 +872,10 @@ const indexing=[1,2,3,4];
         currentMarginBottom = newMarginglBottom;
   
         setPositiongl(nextPosition);
-        checkCollisionblue(nextPosition,'green');
+        if(i=== steps-1)
+       { checkCollisionblue(nextPosition,'green');
         checkCollisionred(nextPosition,'green');
-        checkCollisionyellow(nextPosition,'green');
+        checkCollisionyellow(nextPosition,'green');}
         // Apply the CSS transition effect
         const g = document.getElementById('gpl');
         if (g) {
@@ -806,9 +937,10 @@ const indexing=[1,2,3,4];
         currentMarginBottom = newMarginbuBottom;
   
         setPositionbu(nextPosition);
-        checkCollisiongreen(nextPosition,'blue');
+        if(i=== steps-1)
+        {checkCollisiongreen(nextPosition,'blue');
         checkCollisionred(nextPosition,'blue');
-        checkCollisionyellow(nextPosition,'blue');
+        checkCollisionyellow(nextPosition,'blue');}
         // Apply the CSS transition effect
         const g = document.getElementById('bpu');
         if (g) {
@@ -880,9 +1012,10 @@ const indexing=[1,2,3,4];
         currentMarginLeft = newMarginbrLeft;
         currentMarginBottom = newMarginbrBottom;
         setPositionbr(nextPosition);
+        if(i=== steps-1){
         checkCollisiongreen(nextPosition,'blue');
         checkCollisionred(nextPosition,'blue');
-        checkCollisionyellow(nextPosition,'blue');
+        checkCollisionyellow(nextPosition,'blue');}
         // Apply the CSS transition effect
         const g = document.getElementById('bpr');
         if (g) {
@@ -946,9 +1079,10 @@ const indexing=[1,2,3,4];
         currentMarginBottom = newMarginbdBottom;
   
         setPositionbd(nextPosition);
-        checkCollisiongreen(nextPosition,'blue');
+        if(i=== steps-1)
+        {checkCollisiongreen(nextPosition,'blue');
         checkCollisionred(nextPosition,'blue');
-        checkCollisionyellow(nextPosition,'blue');
+        checkCollisionyellow(nextPosition,'blue');}
         // Apply the CSS transition effect
         const g = document.getElementById('bpd');
         if (g) {
@@ -1020,9 +1154,10 @@ const indexing=[1,2,3,4];
         currentMarginBottom = newMarginblBottom;
   
         setPositionbl(nextPosition);
-        checkCollisiongreen(nextPosition,'blue');
+        if(i=== steps-1)
+        {checkCollisiongreen(nextPosition,'blue');
         checkCollisionred(nextPosition,'blue');
-        checkCollisionyellow(nextPosition,'blue');
+        checkCollisionyellow(nextPosition,'blue');}
         // Apply the CSS transition effect
         const g = document.getElementById('bpl');
         if (g) {
@@ -1083,9 +1218,10 @@ const indexing=[1,2,3,4];
         currentMarginBottom = newMarginruBottom;
   
         setPositionru(nextPosition);
-        checkCollisiongreen(nextPosition,'red');
+        if(i=== steps-1)
+        {checkCollisiongreen(nextPosition,'red');
         checkCollisionblue(nextPosition,'red');
-        checkCollisionyellow(nextPosition,'red');
+        checkCollisionyellow(nextPosition,'red');}
         // Apply the CSS transition effect
         const g = document.getElementById('rpu');
         if (g) {
@@ -1146,9 +1282,10 @@ const indexing=[1,2,3,4];
         currentMarginBottom = newMarginrrBottom;
   
         setPositionrr(nextPosition);
-        checkCollisiongreen(nextPosition,'red');
+        if(i=== steps-1)
+        {checkCollisiongreen(nextPosition,'red');
         checkCollisionblue(nextPosition,'red');
-        checkCollisionyellow(nextPosition,'red');
+        checkCollisionyellow(nextPosition,'red');}
         // Apply the CSS transition effect
         const g = document.getElementById('rpr');
         if (g) {
@@ -1209,9 +1346,10 @@ const indexing=[1,2,3,4];
         currentMarginBottom = newMarginrdBottom;
   
         setPositionrd(nextPosition);
-        checkCollisiongreen(nextPosition,'red');
+        if(i=== steps-1)
+        {checkCollisiongreen(nextPosition,'red');
         checkCollisionblue(nextPosition,'red');
-        checkCollisionyellow(nextPosition,'red');
+        checkCollisionyellow(nextPosition,'red');}
         // Apply the CSS transition effect
         const g = document.getElementById('rpd');
         if (g) {
@@ -1272,9 +1410,10 @@ const indexing=[1,2,3,4];
         currentMarginBottom = newMarginrlBottom;
   
         setPositionrl(nextPosition);
-        checkCollisiongreen(nextPosition,'red');
+        if(i=== steps-1)
+        {checkCollisiongreen(nextPosition,'red');
         checkCollisionblue(nextPosition,'red');
-        checkCollisionyellow(nextPosition,'red');
+        checkCollisionyellow(nextPosition,'red');}
         // Apply the CSS transition effect
         const g = document.getElementById('rpl');
         if (g) {
@@ -1335,9 +1474,10 @@ const indexing=[1,2,3,4];
         currentMarginBottom = newMarginyuBottom;
   
         setPositionyu(nextPosition);
-        checkCollisiongreen(nextPosition,'yellow');
+        if(i=== steps-1)
+        {checkCollisiongreen(nextPosition,'yellow');
         checkCollisionblue(nextPosition,'yellow');
-        checkCollisionred(nextPosition,'yellow');
+        checkCollisionred(nextPosition,'yellow');}
         // Apply the CSS transition effect
         const g = document.getElementById('ypu');
         if (g) {
@@ -1398,9 +1538,10 @@ const indexing=[1,2,3,4];
         currentMarginBottom = newMarginyrBottom;
   
         setPositionyr(nextPosition);
-        checkCollisiongreen(nextPosition,'yellow');
+        if(i=== steps-1)
+       { checkCollisiongreen(nextPosition,'yellow');
         checkCollisionblue(nextPosition,'yellow');
-        checkCollisionred(nextPosition,'yellow');
+        checkCollisionred(nextPosition,'yellow');}
         // Apply the CSS transition effect
         const g = document.getElementById('ypr');
         if (g) {
@@ -1461,9 +1602,10 @@ const indexing=[1,2,3,4];
         currentMarginBottom = newMarginydBottom;
   
         setPositionyd(nextPosition);
-        checkCollisiongreen(nextPosition,'yellow');
+        if(i=== steps-1)
+        {checkCollisiongreen(nextPosition,'yellow');
         checkCollisionblue(nextPosition,'yellow');
-        checkCollisionred(nextPosition,'yellow');
+        checkCollisionred(nextPosition,'yellow');}
         // Apply the CSS transition effect
         const g = document.getElementById('ypd');
         if (g) {
@@ -1524,9 +1666,10 @@ const indexing=[1,2,3,4];
         currentMarginBottom = newMarginylBottom;
   
         setPositionyl(nextPosition);
-        checkCollisiongreen(nextPosition,'yellow');
+        if(i=== steps-1)
+        {checkCollisiongreen(nextPosition,'yellow');
         checkCollisionblue(nextPosition,'yellow');
-        checkCollisionred(nextPosition,'yellow');
+        checkCollisionred(nextPosition,'yellow');}
         // Apply the CSS transition effect
         const g = document.getElementById('ypl');
         if (g) {
